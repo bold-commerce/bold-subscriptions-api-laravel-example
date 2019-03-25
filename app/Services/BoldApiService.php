@@ -92,4 +92,23 @@ class BoldApiService {
 
         return $result;
     }
+
+    /**
+     * Get initial data (subscriptions) for the given Shopify customer id
+     *
+     * @param $shopifyCustomerId
+     * @return bool|mixed
+     */
+    public function getInitialData($shopifyCustomerId)
+    {
+        try {
+            $res = $this->client->get('manage/subscription/initial_data?customer_id='.$shopifyCustomerId);
+            $result = json_decode($res->getBody(), true);
+        }
+        catch (ClientException $e) {
+            return ['status' => $e->getResponse()->getStatusCode()];
+        }
+
+        return $result;
+    }
 }

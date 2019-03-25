@@ -41,11 +41,12 @@ To run this application you will need the following software installed:
 
 ### Use
 
-As part of this project there are two example console commands you can run:
+As part of this project there are a few example console commands you can run:
 
 ```console
 $ php artisan bold:update_next_order_date <shopify_customer_id> <subscription_id> <next_order_date>
 $ php artisan bold:get_products <shopify_customer_id> <subscription_id>
+$ php artisan bold:get_initial_data <shopify_customer_id>
 ```
 
 Replace the following arguments appropriately:
