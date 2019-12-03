@@ -6,7 +6,7 @@ Bold Subscriptions customers using the **Advanced** plan or higher can use our t
 
 This example app leverages the [Laravel](https://laravel.com/) PHP framework and showcases how to interact with the Bold Subscriptions API.
 
-[View Bold third party API documentation](http://docs.boldapps.net/ro-third-party-api/index.html)
+[View Bold third party API documentation](https://docs.boldapps.net/subscriptions/integration/index.html)
 
 ## Getting Started
 
@@ -85,7 +85,7 @@ In doing so it will bind both a *request handler* and a *response handler* (two 
 
 When `updateNextOrderDate` is called it will use the Guzzle client and execute a PUT request to the Bold API with the expected data as documented in the third party API documentation.
 
-[View Bold third party API documentation](http://docs.boldapps.net/ro-third-party-api/index.html#update-next-order-date)
+[View Bold third party API documentation](https://docs.boldapps.net/subscriptions/integration/index.html#update-next-order-date)
 
 #### BoldApiRequestHandler
 
